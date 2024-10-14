@@ -79,3 +79,12 @@ window.addEventListener('scroll', () => {
 
     city.classList.toggle('select-city--active');
   });
+
+
+  const phoneInputs = document.querySelectorAll('input[type="tel"]');
+
+  phoneInputs.forEach(input => {
+    input.addEventListener('input', function() {
+      this.value = this.value.replace(/\D/g, '');
+    });
+  });

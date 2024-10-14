@@ -654,11 +654,13 @@
               Phone Number*
             </label>
             <input
-              type="phone"
+              type="tel"
               id="phone"
               name="phone"
               class="buy-now-inputs__text"
               required
+              inputmode="numeric"
+              pattern="\d*"
             />
           </div>
           <div class="buy-now__select-country">
@@ -840,10 +842,12 @@
               Phone Number*
             </label>
             <input
-              type="phone"
+              type="tel"
               name="phone"
               class="buy-now-inputs__text"
               required
+              inputmode="numeric"
+              pattern="\d*"
             />
           </div>
           <div class="buy-now__city">
@@ -1752,10 +1756,12 @@
                 Phone*
               </label>
               <input
-                type="phone"
+                type="tel"
                 name="phone"
                 class="form__text"
                 required
+                inputmode="numeric"
+                pattern="\d*"
               />
             </div>
             <div class="form__label form__label-textarea">
